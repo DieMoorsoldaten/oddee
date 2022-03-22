@@ -43,7 +43,7 @@
 
         foreach( $my_posts as $post ){
             setup_postdata( $post ); ?>
-            <div class="main-cases-btn px-3">
+            <div class="main-cases-btn px-3 px-md-0">
                 <?php the_content(); ?>
             </div>
             <?php
@@ -100,7 +100,7 @@
 
             foreach( $my_posts as $post ){
                 setup_postdata( $post ); ?>
-                <div class="main-cases-btn main-cases-btn-help px-3">
+                <div class="main-cases-btn main-cases-btn-help px-3 px-md-0">
                     <?php the_content(); ?>
                 </div>
                 <?php
