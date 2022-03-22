@@ -1336,6 +1336,7 @@ html {
     align-items: center;
     flex: 0 1 48%;
     margin-bottom: calc(64 * 100vw / 576);
+    padding-left: calc(16 * 100vw / 576);
 }
 
 .main-clients-inner:hover{
@@ -1392,6 +1393,7 @@ html {
         flex: 0 1 31%;
         margin-bottom: calc(64 * 100vw / 768);
         margin-right: auto;
+        padding-left: calc(16 * 100vw / 768);
     }
 
     .main-clients-inner a:before {
@@ -1444,6 +1446,7 @@ html {
         flex: 0 1 25%;
         margin-bottom: 64px;
         justify-content: start;
+        padding-left: 16px;
     }
     
     .main-clients-inner a {
