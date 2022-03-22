@@ -814,7 +814,46 @@ html {
 
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .main-head {
+        padding: 57px 33px 0;
+    }
+
+    .main-head h1 {
+        font-size: 128px;
+        line-height: 128px;
+        letter-spacing: -9px;
+    }
+    
+    .main-head h1:after {
+        height: 1px;
+        width: 477px;
+    }
+    
+    .main-head-block {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    
+    .main-head-block p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .wp-block-button__link {
+        height: 80px;
+        width: 330px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 32px;
+        transition: all .2s ease;
+    }
+
+    .wp-block-button__link:hover {
+        color:#2361F5;
+    }
+
+}
 
 /* cases */
 
