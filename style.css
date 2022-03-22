@@ -1456,4 +1456,64 @@ html {
 
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .main-clients {
+        padding-top: 96px;
+        padding-bottom: 16px;
+    }
+    
+    .main-clients h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 81px;
+    }
+
+    .main-clients-block {
+        flex: 0 1 25%;
+        margin-bottom: 64px;
+        padding: 0 16px;
+        transition: all .2s ease;
+    }
+
+    .main-clients-block:hover{
+        transform: translate(-5px, -5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .main-clients-block h4 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .main-clients-inner {
+        flex: 0 1 25%;
+        margin-bottom: 64px;
+        justify-content: start;
+    }
+    
+    .main-clients-inner a {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .main-clients-inner a:before {
+        width: 19px;
+        height: 1px;
+        right: -27px;
+    }
+    
+    .main-clients-inner a:after {
+        width: 5px;
+        height: 5px;
+        right: -27px;
+        border-right: 1px solid rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+    
+    .main-client-descr {
+        padding-top: 135px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
