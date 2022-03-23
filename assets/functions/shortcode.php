@@ -26,7 +26,7 @@ add_shortcode( 'awards', 'awards_func' );
 function awards_func( $atts ) {
         ob_start();
         ?>
-			<?php
+		<?php
             $my_posts = get_posts( array(
                 'numberposts' => 6,
                 'category'    => 14,
@@ -53,6 +53,3 @@ function awards_func( $atts ) {
         <?php
 		return ob_get_clean();
 }
-
-
-
