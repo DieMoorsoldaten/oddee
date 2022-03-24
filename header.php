@@ -15,7 +15,7 @@
             <button class="navbar-toggler header__burger mr-3" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="header__menu text-left" id="navbarSupportedContent">
+            <div class="header__menu text-left fix-menu" id="navbarSupportedContent">
                 <div class="header__menu-container container-xl d-block">
                     <?php 
                         wp_nav_menu( array(
@@ -27,13 +27,13 @@
                         ));
                     ?>
                 </div>
-                <div class="header__menu-c ">    
+                <div class="header__menu-c">    
                     <div class="header-menu-btm container-xl d-block">
                         <?php echo do_shortcode( '[footer]'); ?>
                     </div>
                 </div>
             </div>
-            <div class="header__menu-second text-left">
+            <div class="header__menu-second text-left fix-menu">
                 <div class="container-xl position-relative">
                     <a href="#" class="header__menu-second-btn" id="menuBtn"></a>
                     <?php 
