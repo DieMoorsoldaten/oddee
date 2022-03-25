@@ -1901,6 +1901,7 @@ body {
         list-style: none;
         padding-left: 0;
         padding-bottom: calc(150  * 100vw / 576);
+        padding-top: calc(98 * 100vw / 576);
     }
 
     .contact-center li{
@@ -1928,4 +1929,87 @@ body {
         text-align: justify;
         text-transform: uppercase;
         padding-bottom: calc(16  * 100vw / 576);
+    }
+
+    @media (min-width: 768px) {
+        .contact {
+            padding-top: calc(162 * 100vw / 768);
+        }
+    
+        .contact h1 {
+            margin-bottom: calc(64 * 100vw / 768);
+        }
+    
+        .contact-head p {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: calc(24 / 16 * 1rem);
+            margin-bottom: calc(32  * 100vw / 768);
+        }
+    
+        .contact-center p{
+            margin-bottom: calc(32  * 100vw / 768);
+        }
+    
+        .contact-center p a{
+            font-size: calc(20 / 16 * 1rem);
+            line-height: calc(24 / 16 * 1rem);
+        }
+    
+        .contact-center ul{
+            padding-bottom: calc(150  * 100vw / 768);
+            padding-top: calc(98 * 100vw / 768);
+        }
+    
+        .contact-center li{
+            margin-right: calc(77  * 100vw / 768);
+            width: calc(60  * 100vw / 768);
+            height: calc(60  * 100vw / 768);
+        }
+
+        .contact-btm{
+            padding-bottom: calc(16  * 100vw / 768);
+        }
+    }
+    @media (min-width: 1200px) {
+        .contact {
+            padding-top: 162px;
+        }
+    
+        .contact h1 {
+            font-size: 54px;
+            line-height: 65px;
+            margin-bottom: 64px;
+        }
+    
+        .contact-head p {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+    
+        .contact-center p{
+            margin-bottom: 32px;
+        }
+    
+        .contact-center p a{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    
+        .contact-center ul{
+            padding-bottom: 150px;
+            padding-top: 98px;
+        }
+    
+        .contact-center li{
+            margin-right: 77px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .contact-btm{
+            font-size: 16px;
+            line-height: 19px;
+            padding-bottom: 16px;
+        }
     }

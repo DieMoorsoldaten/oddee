@@ -19,7 +19,7 @@
 
                 foreach( $my_posts as $post ){
                     setup_postdata( $post ); ?>
-                    <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                         <div class="contact-head">
                             <h1>
                                 <?php the_title(); ?>
@@ -52,7 +52,7 @@
 
                 foreach( $my_posts as $post ){
                     setup_postdata( $post ); ?>
-                    <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                         <div class="contact-btm">
                             <?php the_content(); ?>
                         </div>
