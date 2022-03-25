@@ -33,6 +33,7 @@
                         setup_postdata($post); ?>
 
                         <div class="services-block">
+                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                             <h3>
                                 <?php the_title(); ?>
                             </h3>
@@ -65,6 +66,7 @@
             foreach( $my_posts as $post ){
                 setup_postdata( $post ); ?>
                 <div class="services-bottom">
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                     <?php the_content(); ?>
                 </div>
                 <?php

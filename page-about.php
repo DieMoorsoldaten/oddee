@@ -1,34 +1,37 @@
 <?php get_header(); ?>
 
 <div class="fix-wrapper about">
-    <div class="container">
-    <?php
-            $my_posts = get_posts( array(
-                'numberposts' => -1,
-                'category'    => 26,
-                'orderby'     => 'date',
-                'order'       => 'ASC',
-                'include'     => array(),
-                'exclude'     => array(),
-                'meta_key'    => '',
-                'meta_value'  =>'',
-                'post_type'   => 'post',
-                'suppress_filters' => true,
-            ) );
+    <div class="container-fluid">
+        <div class="container">
+            <?php
+                $my_posts = get_posts( array(
+                    'numberposts' => -1,
+                    'category'    => 26,
+                    'orderby'     => 'date',
+                    'order'       => 'ASC',
+                    'include'     => array(),
+                    'exclude'     => array(),
+                    'meta_key'    => '',
+                    'meta_value'  =>'',
+                    'post_type'   => 'post',
+                    'suppress_filters' => true,
+                ) );
 
-            foreach( $my_posts as $post ){
-                setup_postdata( $post ); ?>
-                <div class="about-block">
-                    <h3>
-                        <?php the_title(); ?>
-                    </h3>
-                    <?php the_content(); ?>
-                </div>
-                <?php
-            }
+                foreach( $my_posts as $post ){
+                    setup_postdata( $post ); ?>
+                    <div class="about-block">
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                        <?php the_content(); ?>
+                    </div>
+                    <?php
+                }
 
-            wp_reset_postdata();
-        ?>
+                wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="container-fluid main-awards">
         <div class="container">
@@ -75,6 +78,7 @@
                                 foreach( $my_posts as $post ){
                                     setup_postdata( $post ); ?>
                                     <div class="main-clients-block">
+                                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <figure>
                                             <?php the_post_thumbnail(); ?>
                                         </figure>
@@ -104,6 +108,7 @@
                                 foreach( $my_posts as $post ){
                                     setup_postdata( $post ); ?>
                                     <div class="main-clients-inner">
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <?php the_content(); ?>
                                     </div>
                                 <?php
@@ -138,11 +143,13 @@
                 foreach( $my_posts as $post ){
                     setup_postdata( $post ); ?>
                     <div class="about-btm">
-                    <h1>
-                        <?php the_title(); ?>
-                    </h1>
-                    <?php the_content(); ?>
-                </div>
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <h1>
+                            <?php the_title(); ?>
+                        </h1>
+                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <?php the_content(); ?>
+                    </div>
                 <?php
                 }
 

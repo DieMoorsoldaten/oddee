@@ -19,6 +19,7 @@
             foreach( $my_posts as $post ){
                 setup_postdata( $post ); ?>
                 <div class="main-head-block">
+                <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                     <?php the_content(); ?>
                 </div>
                 <?php
@@ -45,6 +46,7 @@
             foreach( $my_posts as $post ){
                 setup_postdata( $post ); ?>
                 <div class="main-cases-btn px-3 px-md-0">
+                <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                     <?php the_content(); ?>
                 </div>
                 <?php
@@ -70,6 +72,7 @@
                 foreach( $my_posts as $post ){
                     setup_postdata( $post ); ?>
                     <div class="main-cases-block">
+                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                         <figure class="mb-2">
                             <?php the_post_thumbnail(); ?>
                         </figure>
@@ -169,6 +172,7 @@
                                 foreach( $my_posts as $post ){
                                     setup_postdata( $post ); ?>
                                     <div class="main-clients-block">
+                                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <figure>
                                             <?php the_post_thumbnail(); ?>
                                         </figure>
@@ -198,6 +202,7 @@
                                 foreach( $my_posts as $post ){
                                     setup_postdata( $post ); ?>
                                     <div class="main-clients-inner">
+                                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <?php the_content(); ?>
                                     </div>
                                 <?php
@@ -228,10 +233,11 @@
 
                 foreach( $my_posts as $post ){
                     setup_postdata( $post ); ?>
-                    <div class="main-client-descr">
-                        <?php the_content(); ?>
-                    </div>
-                <?php
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <div class="main-client-descr">
+                            <?php the_content(); ?>
+                        </div>
+                    <?php
                 }
 
                 wp_reset_postdata();
