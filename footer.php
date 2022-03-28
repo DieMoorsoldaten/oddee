@@ -1,6 +1,7 @@
     <footer>
         <div class="footer px-0">
             <div class="container">
+                <?php //echo do_shortcode( '[footer]'); ?>
                 <?php echo do_shortcode( '[footer]'); ?>
                 <div class="to-up">
                     <svg width="66" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">

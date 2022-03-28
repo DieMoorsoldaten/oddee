@@ -35,7 +35,58 @@
     </div>
     <div class="container-fluid main-awards">
         <div class="container">
-            <?php echo do_shortcode( '[awards]' ); ?>
+            <?php
+                $my_posts = get_posts( array(
+                    'numberposts' => 1,
+                    'category'    => 15,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'include'     => array(),
+                    'exclude'     => array(),
+                    'meta_key'    => '',
+                    'meta_value'  =>'',
+                    'post_type'   => 'post',
+                    'suppress_filters' => true,
+                ) );
+
+                foreach( $my_posts as $post ){
+                    setup_postdata( $post ); ?>
+                    <div class="main-awards-head">
+                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <?php the_content(); ?>
+                    </div>
+                <?php
+                wp_reset_postdata();
+
+                }?>
+
+            <div class="wp-block-group__inner-container">
+
+                <?php
+                    $my_posts = get_posts( array(
+                        'numberposts' => 6,
+                        'category'    => 31,
+                        'orderby'     => 'date',
+                        'order'       => 'ASC',
+                        'include'     => array(),
+                        'exclude'     => array(),
+                        'meta_key'    => '',
+                        'meta_value'  =>'',
+                        'post_type'   => 'post',
+                        'suppress_filters' => true,
+                    ) );
+
+                    foreach( $my_posts as $post ){
+                        setup_postdata( $post ); ?>
+                        <figure class="main-awards-block">
+                            <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                            <?php the_post_thumbnail(); ?>
+                        </figure>
+                        <?php
+                    }
+
+                    wp_reset_postdata();?>
+            </div>
         </div>
     </div>
     <div class="container-fluid main-clients">
